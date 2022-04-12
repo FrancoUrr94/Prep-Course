@@ -72,10 +72,10 @@ function colors(color) {
     case "Green":
    return "This is green";
     case "orange":
-    return "This is orange";
+    return "This is orange"
     default:
    return "Color not foud";
-    }
+  }
   }
 
 function esDiezOCinco(numero) {
