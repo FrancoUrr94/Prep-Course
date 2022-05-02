@@ -1,5 +1,7 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
+const { addLeadingDotSlashArray } = require("@11ty/eleventy/src/TemplatePath");
+
 // Crea una variable "string", puede contener lo que quieras:
 const nuevaString = "Hola";
 
@@ -203,7 +205,7 @@ function obtenerAreaRectangulo(alto, ancho) {
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  return lado *8;
+    return lado * 4;
 }
 
 
@@ -228,14 +230,15 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  var letra = ("A" || "E" || "O" || "U")
-  if(letra.length === "A" || letra.length === "E" || letra.length === "O" || letra.length === "U"){
-    return "Es vocal";
-  } else {
+  if(letra.length > 1){
     return "Dato incorrecto"
   }
-}
+  if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
+    return "Es vocal"
+  }
+  return "Dato incorrecto"
 
+}
 
 
 // No modificar nada debajo de esta línea
